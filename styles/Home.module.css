@@ -1,0 +1,18 @@
+.container {
+    height: 100vh;
+    background: linear-gradient(to bottom, #96f2d7, #7aa5d7);
+}
+
+.font {
+    margin-top: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.patientcontainer{
+    background-color: bisque;
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+}
