@@ -11,7 +11,7 @@ import { notifications } from "@mantine/notifications";
 
 import { InputText } from "primereact/inputtext";
 import { Password } from "primereact/password";
-import home from './Home';
+import home from './home';
 
 import navbar from '@/component/navbar';
 
