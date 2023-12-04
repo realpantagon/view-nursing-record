@@ -2,6 +2,8 @@ import React from 'react';
 import { Menubar } from 'primereact/menubar';
 import { InputText } from 'primereact/inputtext';
 import { MenuItem } from 'primereact/menuitem';
+import styles from '../styles/navbar.module.css'
+import Link from 'next/link';
 
 export default function Navbar() {
     const items: MenuItem[] = [
@@ -133,13 +135,14 @@ export default function Navbar() {
         // }
     ];
 
-    const start = <img alt="logo" src="https://logowik.com/content/uploads/images/npm-inc7007.logowik.com.webp" height="40" className="mr-3"></img>;
+    const start = <Link href='/home'><img alt="logo" src="https://logowik.com/content/uploads/images/npm-inc7007.logowik.com.webp" height="40" className="mr-3"></img></Link>;
     const end = <InputText placeholder="ค้นหาผู้ป่วย" type="text" className="w-full" />;
 
     return (
         <div className="card">
             {/* <Menubar model={items} start={start} end={end} />  */}
             <Menubar model={items} start={start} /> 
+            <div className={styles.lines}/>
         </div>
     )
 }
