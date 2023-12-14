@@ -21,7 +21,6 @@ export default function Loginpage() {
 
   return (
     <div className={styles.container}>
-      
       <div className={styles.boxsideboxcontainer}>
         <div className={styles.sidebox}>
           <div className={styles.img}>

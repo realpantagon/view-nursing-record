@@ -40,8 +40,10 @@ export default function Navbar() {
         //     ]
         // },
         {
-            label: 'เพิ่มการบันทึกพยาบาล',
+            // label: 'เพิ่มการบันทึกพยาบาล',
+            label: 'ค้นหาผู้ป่วย',
             icon: 'pi pi-fw pi-pencil',
+            url:'/search' 
             // items: [
             //     {
             //         label: 'Left',
@@ -62,24 +64,24 @@ export default function Navbar() {
 
             // ]
         },
-        {
-            label: 'ผู้ป่วย',
-            icon: 'pi pi-fw pi-user',
-            items: [
-                {
-                    label: 'เพิ่มผู้ป่วยที่ต้องดูแล',
-                    icon: 'pi pi-fw pi-user-plus',
+        // {
+        //     label: 'ผู้ป่วย',
+        //     icon: 'pi pi-fw pi-user',
+        //     items: [
+                // {
+                //     label: 'เพิ่มผู้ป่วยที่ต้องดูแล',
+                //     icon: 'pi pi-fw pi-user-plus',
 
-                },
-                {
-                    label: 'ลบผู้ป่วยที่ต้องดูแล',
-                    icon: 'pi pi-fw pi-user-minus',
+                // },
+                // {
+                //     label: 'ลบผู้ป่วยที่ต้องดูแล',
+                //     icon: 'pi pi-fw pi-user-minus',
 
-                },
-                {
-                    label: 'ค้นหาผู้ป่วย',
-                    icon: 'pi pi-fw pi-users',
-                    url:'/search'
+                // },
+                // {
+                //     label: 'ค้นหาผู้ป่วย',
+                //     icon: 'pi pi-fw pi-users',
+                //     url:'/search'
                     // items: [
                     //     {
                     //         label: 'Filter',
@@ -96,39 +98,39 @@ export default function Navbar() {
                     //         label: 'List'
                     //     }
                     // ]
-                }
-            ]
-        },
-        {
-            label: 'Events',
-            icon: 'pi pi-fw pi-calendar',
-            items: [
-                {
-                    label: 'Edit',
-                    icon: 'pi pi-fw pi-pencil',
-                    items: [
-                        {
-                            label: 'Save',
-                            icon: 'pi pi-fw pi-calendar-plus'
-                        },
-                        {
-                            label: 'Delete',
-                            icon: 'pi pi-fw pi-calendar-minus'
-                        }
-                    ]
-                },
-                {
-                    label: 'Archive',
-                    icon: 'pi pi-fw pi-calendar-times',
-                    items: [
-                        {
-                            label: 'Remove',
-                            icon: 'pi pi-fw pi-calendar-minus'
-                        }
-                    ]
-                }
-            ]
-        },
+                // }
+            // ]
+        // },
+        // {
+        //     label: 'Events',
+        //     icon: 'pi pi-fw pi-calendar',
+        //     items: [
+        //         {
+        //             label: 'Edit',
+        //             icon: 'pi pi-fw pi-pencil',
+        //             items: [
+        //                 {
+        //                     label: 'Save',
+        //                     icon: 'pi pi-fw pi-calendar-plus'
+        //                 },
+        //                 {
+        //                     label: 'Delete',
+        //                     icon: 'pi pi-fw pi-calendar-minus'
+        //                 }
+        //             ]
+        //         },
+        //         {
+        //             label: 'Archive',
+        //             icon: 'pi pi-fw pi-calendar-times',
+        //             items: [
+        //                 {
+        //                     label: 'Remove',
+        //                     icon: 'pi pi-fw pi-calendar-minus'
+        //                 }
+        //             ]
+        //         }
+        //     ]
+        // },
         // {
         //     label: 'Quit',
         //     icon: 'pi pi-fw pi-power-off'
@@ -142,7 +144,6 @@ export default function Navbar() {
         <div className="card">
             {/* <Menubar model={items} start={start} end={end} />  */}
             <Menubar model={items} start={start} /> 
-            <div className={styles.lines}/>
         </div>
     )
 }
